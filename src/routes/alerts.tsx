@@ -1,0 +1,3 @@
+import { createFileRoute } from "@tanstack/react-router";
+import { WaterPlatform } from "@/components/WaterPlatform";
+export const Route = createFileRoute("/alerts")({ head: () => ({ meta: [{ title: "全域告警中心 — 澜川智慧水务" }, { name: "description", content: "聚合供水风险事件并追踪处置闭环。" }, { property: "og:title", content: "全域告警中心 — 澜川智慧水务" }, { property: "og:description", content: "聚合供水风险事件并追踪处置闭环。" }, { property: "og:type", content: "website" }, { name: "twitter:card", content: "summary_large_image" }] }), component: () => <WaterPlatform page="alerts" /> });
